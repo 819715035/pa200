@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bmode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/toogle_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="live" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CineBuffer#:" />
+
+            <TextView
+                android:id="@+id/cine_buffer_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B" />
+
+                <Button
+                    android:id="@+id/cMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CF" />
+
+                <Button
+                    android:id="@+id/fit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="fit_width" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gain" />
+
+                <SeekBar
+                    android:id="@+id/seekBarGain"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dynamic Range" />
+
+                <SeekBar
+                    android:id="@+id/seekBarDr"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:max="100"
+                    android:progress="50" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TGC1" />
+
+                <SeekBar
+                    android:id="@+id/seekBarTgc1"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TGC2" />
+
+                <SeekBar
+                    android:id="@+id/seekBarTgc2"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TGC3" />
+
+                <SeekBar
+                    android:id="@+id/seekBarTgc3"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TGC4" />
+
+                <SeekBar
+                    android:id="@+id/seekBarTgc4"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:max="100"
+                    android:progress="50" />
+
+                <Button
+                    android:id="@+id/resetAllTgc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="reset Tgc" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Persistence" />
+
+                <SeekBar
+                    android:id="@+id/seekBarPersistence"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="4"
+                    android:progress="0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enhancement" />
+
+                <SeekBar
+                    android:id="@+id/seekBarEnhancement"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:max="4"
+                    android:progress="0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gray Map" />
+
+                <NumberPicker
+                    android:id="@+id/np"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"/>
+
+                <Button
+                    android:id="@+id/test_conn_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test Conn Error" />
+
+                <Button
+                    android:id="@+id/test_over_heated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test Over Heated" />
+
+                <Button
+                    android:id="@+id/test_battery_low"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test Battery Low" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <com.ys.pa200.weight.UsImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:scaleType="matrix" />
+
+</LinearLayout>

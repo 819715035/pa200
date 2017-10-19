@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.ys.pa200"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            jniDebuggable true
+        }
+        debug {
+            jniDebuggable true
+        }
+        repositories {
+            flatDir {
+                dirs 'libs'
+            }
+        }
+    }
+
+    packagingOptions
+            {
+                exclude 'META-INF/rxjava.properties'
+                exclude 'Lcom/google/gson/JsonSerializer'
+            }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile('com.github.tony19:logback-android-classic:1.1.1-6') {
+        // workaround issue #73
+        exclude group: 'com.google.android', module: 'android'
+    }
+    //    compile 'io.netty:netty-all:4.1.9.Final'
+    compile(name: 'base-lib-release', ext: 'aar')
+    compile(name: 'wifi-lib-release', ext: 'aar')
+    compile project(':interface')
+    compile files('libs/rxandroid-1.1.0.jar')
+    compile files('libs/rxjava-1.1.1.jar')
+    compile files('libs/netty-all-4.1.9.Final-sources.jar')
+    compile files('libs/netty-all-4.1.9.Final.jar')
+
+    //以下SDK开发者请根据需要自行选择
+    //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
+    //3.5.5：请务必查看下面注释[1]
+    //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
+    //数据库
+    //数据库
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'org.slf4j:slf4j-api:1.7.23'
+    compile 'com.amitshekhar.android:glide-bitmap-pool:0.0.1'
+    compile 'com.github.tony19:logback-android-core:1.1.1-6'
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    compile 'cn.bmob.android:http-legacy:1.0'
+    compile 'org.litepal.android:core:1.6.0'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}

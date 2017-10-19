@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.ys.pa200.weight.HeadColumnView
+        android:id="@+id/companypro_headColumnView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:is_show_left_btn="true"
+        app:is_show_right_text="false"
+        app:title_context="公司简介" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/two" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="介绍"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/my_0888cf"/>
+
+                <View
+                    style="@style/check_text_view_layout"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="广东杜曼医学科技有限公司，专注于医疗设备的研发、制造与销售业务，以卓越的技术和创新能力，致力于人类健康事业\n
+
+            　　          我们坚信企业的发展，人才是最主要的因素，我们注重人才的培养，积极为有能力、有经验的高素质人才提供有竞争力的薪酬福利和良好的晋升机会\n
+
+            　　          我们明白产品质量是企业持续发展的基础，在产品的研发和制造过程中，我们严格遵守相关法规、体系的要求，最大程度保证产品质量的可靠性\n
+
+            　　          公司注重研发投入，目前已有多项自主研发的知识产权在申办中，在研发团队全体成员的共同努力下，我们在超声应用领域已取得了一定的成就，相信产品推出市场必将引导临床操作规范，顺应时代要求，成为市场的领跑者\n
+
+            　　          展望未来，我们秉承自主创新能力，充分结合临床和市场的需求，不断推出有竞争力的产品，依靠卓越的品质和完善的售后服务，使企业发展成为受人尊重和有一定品牌价值的知名企业"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

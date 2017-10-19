@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bmode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:background="@color/my_efefef"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/home_connectultconnect_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/shape_main_btntwo"
+                    android:text="关闭Live"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/home_connectultconnect_wh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/shape_main_btntwo"
+                    android:text="合适宽度"
+                    android:textColor="@color/white" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_file"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="病例+"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="测量"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_gianadd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="GIAN+"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_gianlow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="GIAN-"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="模式B"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_cf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="模式CF"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_dradd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="动态+"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_drlow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="动态-"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_zqadd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="增强+"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_zqlow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="增强-"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_cjadd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="持久+"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_cjlow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="持久-"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_dep32"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="LDepth32"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_dep63"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="LDepth63"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_dep126"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="CDepth126"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/home_connectultconnect_dep189"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:text="CDepth189"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/home_savebitmap_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:drawableTop="@mipmap/abc_ic_menu_cut_mtrl_alpha"
+                        android:text="截图+"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_main_btntwo"
+                        android:drawableTop="@mipmap/abc_ic_menu_selectall_mtrl_alpha"
+                        android:text="视频+"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+    <com.ys.pa200.weight.UsImageView
+        android:id="@+id/image_usview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:scaleType="matrix" />
+
+    <TextView
+        android:id="@+id/home_connectultconnect_textlv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电量: 50%"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="11sp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/home_connectultconnect_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温度: 50"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/home_connectultconnect_textlv"
+        android:textSize="11sp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/home_connectultconnect_textone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名: 无"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="11sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/home_connectultconnect_bianhao"
+        android:layout_below="@+id/home_connectultconnect_textone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编号: 无"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="11sp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/home_connectultconnect_gainli"
+        android:layout_below="@+id/home_connectultconnect_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增益: "
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/home_connectultconnect_giantext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_connectultconnect_gainlinear"
+        android:layout_below="@+id/home_connectultconnect_gainli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态: "
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/home_connectultconnect_dongtaitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_connectultconnect_cjtext"
+        android:layout_below="@+id/home_connectultconnect_bianhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="持久: 4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="11sp"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:id="@+id/home_connectultconnect_images"
+        android:layout_below="@+id/home_connectultconnect_cjtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图像: "
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/home_connectultconnect_tuxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高"
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_connectultconnect_depth"
+        android:layout_below="@+id/home_connectultconnect_gainlinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深度: "
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/home_connectultconnect_depthtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/home_connectultconnect_dongjie"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_on_time"/>
+</RelativeLayout>
+
+</LinearLayout>

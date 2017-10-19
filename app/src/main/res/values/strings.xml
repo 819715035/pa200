@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">杜曼医疗</string>
+    <string name="net_error">请检查您的网络设置</string>
+    <string name="service_error">服务器异常</string>
+    <string name="no_more_data">没有更多数据了......</string>
+    <string name="now_not_done">功能正在开发中，敬请期待......</string>
+</resources>

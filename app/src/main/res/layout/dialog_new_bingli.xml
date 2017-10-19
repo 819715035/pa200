@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_shape"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:background="@color/my_efefef"
+                android:textColor="@color/my_333333"
+                android:textSize="14sp"
+                android:text="新建病例"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/my_efefef"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="编号："/>
+
+                <EditText
+                    android:id="@+id/dialog_bingli_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:background="@null"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:hint="请输入病例编号"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/check_text_view_layout"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/my_efefef"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名："/>
+
+                <EditText
+                    android:id="@+id/dialog_bingli_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:background="@null"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:hint="请输入姓名"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/check_text_view_layout"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/my_efefef"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="性别："/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true">
+
+                    <RadioGroup
+                        android:id="@+id/bingli_radioGroup"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+                    <RadioButton
+                        android:id="@+id/dialog_bingli_man"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textColor="@drawable/radiobutton_color"
+                        android:textSize="16sp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="男"/>
+
+                    <RadioButton
+                        android:id="@+id/dialog_bingli_nv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textColor="@drawable/radiobutton_color"
+                        android:textSize="16sp"
+                        android:button="@null"
+                        android:text="女"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/check_text_view_layout"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/my_efefef"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="年龄："/>
+
+                <EditText
+                    android:id="@+id/dialog_bingli_nianling"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:background="@null"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:hint="请输入年龄"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/my_efefef"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="体重："/>
+
+                <EditText
+                    android:id="@+id/dialog_bingli_weightkg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:hint="请输入体重kg"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/my_efefef"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="项目："/>
+
+                <EditText
+                    android:id="@+id/dialog_bingli_editxq"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:background="@null"
+                    android:textColor="@color/my_333333"
+                    android:textSize="14sp"
+                    android:hint="请输入检查项目"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/check_text_view_layout"/>
+
+            <View
+                style="@style/check_text_view_layout"/>
+
+            <Button
+                android:id="@+id/continue_pay_btn"
+                android:layout_width="160dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/shape_btn"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/continue_pay_cancel_btn"
+                android:layout_width="160dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="取消"
+                android:textColor="@color/my_999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

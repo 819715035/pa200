@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_ad_default_img"
+        android:layout_margin="5dp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/patient_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="病人：xxx  年龄：70  "
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/doctor_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="主治医生：xxx"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/delect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:background="@drawable/shape_main_btntwo"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:focusable="false"/>
+</LinearLayout>

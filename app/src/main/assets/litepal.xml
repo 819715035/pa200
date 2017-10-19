@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--
+		Define the database name of your application. 
+		By default each database name should be end with .db. 
+		If you didn't name your database end with .db, 
+		LitePal would plus the suffix automatically for you.
+		For example:    
+    	<dbname value="demo" ></dbname>
+    -->
+    <dbname value="wifiprobe" />
+
+    <!--
+    	Define the version of your database. Each time you want 
+    	to upgrade your database, the version tag would helps.
+    	Modify the models you defined in the mapping tag, and just 
+    	make the version value plus one, the upgrade of database
+    	will be processed automatically without concern.
+		For example:    
+    	<version value="1" ></version>
+    -->
+    <version value="2" />
+
+    <!--
+    	Define your models in the list with mapping tag, LitePal will
+    	create tables for each mapping class. The supported fields
+    	defined in models will be mapped into columns.
+    	For example:    
+    	<list>
+    		<mapping class="com.test.model.Reader"></mapping>
+    		<mapping class="com.test.model.Magazine"></mapping>
+    	</list>
+    -->
+    <list>
+        <mapping class="com.ys.pa200.bean.Patient"></mapping>
+        <mapping class="com.ys.pa200.bean.CheckProgrem"></mapping>
+        <mapping class="com.ys.pa200.bean.PicData"></mapping>
+        <!--     <mapping class="com.litepaltest.model.Classroom" />
+              <mapping class="com.litepaltest.model.Teacher" />
+              <mapping class="com.litepaltest.model.IdCard" />
+              <mapping class="com.litepaltest.model.Student" />
+              <mapping class="com.litepaltest.model.Cellphone" />
+              <mapping class="com.litepaltest.model.Computer" />
+              <mapping class="com.litepaltest.model.Book" />
+              <mapping class="com.litepaltest.model.Product" />
+              <mapping class="com.litepaltest.model.Headset" />
+              <mapping class="com.litepaltest.model.WeChatMessage" />
+              <mapping class="com.litepaltest.model.WeiboMessage" /> -->
+    </list>
+
+</litepal>

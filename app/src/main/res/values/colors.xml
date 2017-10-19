@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="my_e8e8e8">#E8E8E8</color>
+    <color name="my_0888cf">#0888CF</color>
+    <color name="my_666666">#666666</color>
+    <color name="my_25be8f">#25BE8F</color>
+    <color name="my_eabf50">#eabf50</color>
+    <color name="my_333333">#333333</color>
+    <color name="my_999999">#999999</color>
+    <!--灰色背景-->
+    <color name="app_bg">#f2f2f2</color><!--灰色背景-->
+    <color name="my_efefef">#EFEFEF</color>
+    <color name="my_dcdcdc">#DCDCDC</color>
+    <color name="my_898998">#898998</color>
+
+</resources>
