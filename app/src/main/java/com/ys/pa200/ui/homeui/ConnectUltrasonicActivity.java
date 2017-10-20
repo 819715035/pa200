@@ -552,11 +552,13 @@ public class ConnectUltrasonicActivity extends BaseActivity implements Probe.Sca
 				saveBitmap();
 				break;
 			case R.id.measure_btn:
+				//测量
 				if (popuWindows.mPopupWindow.isShowing()){
 					popuWindows.dismiss();
 				}else{
 					popuWindows.showAsRightTop(mMeasureBtn,0,0);
 				}
+
 				break;
 			default:
 				break;
