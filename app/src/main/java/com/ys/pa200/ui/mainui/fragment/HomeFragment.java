@@ -88,10 +88,11 @@ public class HomeFragment extends BaseFragment implements OnClickListener , Prob
 						Intent intent = new Intent(getActivity(), ConnectUltrasonicActivity.class);
 						startActivity(intent);
 						return;
-					}
-					if (!probe.isRequesting()) {
-						MyToast.getInstance(getContext()).show("connecting to probe",0);
-						probe.initialize();
+					}else{
+						if (!probe.isRequesting()) {
+							MyToast.getInstance(getContext()).show("connecting to probe",0);
+							probe.initialize();
+						}
 					}
 
 				}

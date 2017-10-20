@@ -579,6 +579,12 @@ public class ConnectUltrasonicActivity extends BaseActivity implements Probe.Sca
 	}
 
 	@Override
+	protected void onStop() {
+		super.onStop();
+		probe.stopScan();
+	}
+
+	@Override
 	public void onNewFrameReady(Probe.Frame frame, Bitmap bitmap)
 	{
 		if (frame.mode == probe.getMode()) {
