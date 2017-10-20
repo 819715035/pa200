@@ -17,6 +17,7 @@ import com.ys.pa200.bean.Patient;
 import com.ys.pa200.bean.PicData;
 import com.ys.pa200.dialog.FileDialog;
 import com.ys.pa200.ui.baseui.BaseActivity;
+import com.ys.pa200.ui.baseui.BasePopuWindows;
 import com.ys.pa200.utils.BitmapUtils;
 import com.ys.pa200.utils.MyToast;
 import com.ys.pa200.utils.SDCUtils;
@@ -120,11 +121,15 @@ public class ConnectUltrasonicActivity extends BaseActivity implements Probe.Sca
 	@BindView(R.id.home_connectultconnect_dongjie)
 	ImageView home_connectultconnect_dongjie;
 
+	@BindView(R.id.measure_btn)
+	Button mMeasureBtn;
+
 
 	private FileDialog fileDialog;
 	private Probe probe;
 	private CheckProgrem cp; //检查项目
 	private Patient patient; //病人信息
+	private BasePopuWindows popuWindows;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -223,6 +228,8 @@ public class ConnectUltrasonicActivity extends BaseActivity implements Probe.Sca
 	private void initView()
 	{
 		home_connectultconnect_cjtext = (TextView) findViewById(R.id.home_connectultconnect_cjtext);
+		View showView = View.inflate(this,R.layout.item_measure,null);
+		popuWindows = new BasePopuWindows(this,BasePopuWindows.TYPE_MATCH_PARENT,showView,false);
 	}
 
 
@@ -370,7 +377,7 @@ public class ConnectUltrasonicActivity extends BaseActivity implements Probe.Sca
 			, R.id.home_connectultconnect_zqadd , R.id.home_connectultconnect_zqlow
 			, R.id.home_connectultconnect_dep32 , R.id.home_connectultconnect_dep63
 			, R.id.home_connectultconnect_dep126 , R.id.home_connectultconnect_dep189
-			, R.id.home_connectultconnect_dongjie,R.id.home_savebitmap_btn})
+			, R.id.home_connectultconnect_dongjie,R.id.home_savebitmap_btn,R.id.measure_btn})
 	public void onClick(View view)
 	{
 		switch (view.getId())
@@ -544,6 +551,13 @@ public class ConnectUltrasonicActivity extends BaseActivity implements Probe.Sca
 				//截图
 				saveBitmap();
 				break;
+			case R.id.measure_btn:
+				if (popuWindows.mPopupWindow.isShowing()){
+					popuWindows.dismiss();
+				}else{
+					popuWindows.showAsRightTop(mMeasureBtn,0,0);
+				}
+				break;
 			default:
 				break;
 		}
@@ -576,12 +590,16 @@ public class ConnectUltrasonicActivity extends BaseActivity implements Probe.Sca
 		{
 			probe.startScan();
 		}
+		//屏幕长亮
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 	}
 
 	@Override
 	protected void onStop() {
 		super.onStop();
 		probe.stopScan();
+		//取消长亮
+		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 	}
 
 	@Override

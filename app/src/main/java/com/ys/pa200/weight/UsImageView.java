@@ -421,7 +421,7 @@ public class UsImageView extends AppCompatImageView {
         if (probe.getMode() == Probe.EnumMode.MODE_C) {
             drawOutline(canvas);
         }
-       //';;;;;ll;l drawMeasure(canvas);
+        //drawMeasure(canvas);
         drawDepthLine(canvas);
         drawCenterLine(canvas);
         getScale();
