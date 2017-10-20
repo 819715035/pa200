@@ -79,11 +79,11 @@ public class UsImageView extends AppCompatImageView {
     private int canvasWidth;
     private int canvasHeight;
 
-    private final float minWidth = 100;
+    private final float minWidth = 150;
     private float colorAngle = 0;
 
-    private float roiWidth = 200;
-    private float roiHeight = 200;
+    private float roiWidth = 250;
+    private float roiHeight = 250;
 
     private PointF roiStart = new PointF();
 
@@ -217,7 +217,7 @@ public class UsImageView extends AppCompatImageView {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_UP){
+       /* if (event.getAction() == MotionEvent.ACTION_UP){
             currentIndex++;
             float[] values = new float[9];
             zoomMatrix.getValues(values);
@@ -236,7 +236,7 @@ public class UsImageView extends AppCompatImageView {
                     break;
             }
             postInvalidate();
-        }
+        }*/
         if (probe.getMode() == Probe.EnumMode.MODE_B) {
             bModeOnTouchEvent(event);
         }
@@ -421,12 +421,13 @@ public class UsImageView extends AppCompatImageView {
         if (probe.getMode() == Probe.EnumMode.MODE_C) {
             drawOutline(canvas);
         }
-        drawMeasure(canvas);
+       //';;;;;ll;l drawMeasure(canvas);
         drawDepthLine(canvas);
         drawCenterLine(canvas);
         getScale();
         getOffsetX();
     }
+
 
     //画测量图形
     private void drawMeasure(Canvas canvas)

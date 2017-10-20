@@ -20,6 +20,7 @@ public class Patient extends DataSupport implements Serializable{
     private String age = "0";
     private String number = "临时编号";
     private long date =new Date().getTime();
+
     private ArrayList<CheckProgrem> checkProgrems = new ArrayList<>();
 
     public long getId()
@@ -105,8 +106,7 @@ public class Patient extends DataSupport implements Serializable{
     @Override
     public String toString()
     {
-        return  "  id：" + id +
-                "  编号：" + number +
+        return  "  编号：" + number +
                 "  姓名：" + name +
                 "  sex：" + sex +
                 "  体重：" + weight +

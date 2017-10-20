@@ -103,6 +103,6 @@ public class ReadRecordActivity extends BaseActivity {
             nopicTV.setVisibility(View.VISIBLE);
         }
         picRv.setAdapter(new PicAdapter(this,picdatas));
-        picRv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        picRv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
     }
 }
